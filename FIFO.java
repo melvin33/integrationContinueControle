@@ -68,15 +68,4 @@ public class FIFO {
     public int size() {
         return queue.size();
     }
-    
-    public static void main(String[] args) {
-        FIFO maFifo = new FIFO();
-        lancerTest(maFifo);
-    }
-    
-    public static void lancerTest(FIFO maFifoTest) {
-        maFifoTest.add(1);
-        maFifoTest.add(2);
-        System.out.println(maFifoTest.first());
-    }
 }
