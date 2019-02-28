@@ -106,5 +106,5 @@ public class FIFOTestDuffieuxMelvin {
         int[] tableau3 = new int[] {4,5,4};
         
         return Stream.of(Arguments.of(tableau0, 0), Arguments.of(tableau1, 1), Arguments.of(tableau2, 2), Arguments.of(tableau3, 3));
-}
+    }
 }
