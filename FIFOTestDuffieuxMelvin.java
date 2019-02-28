@@ -36,7 +36,7 @@ public class FIFOTestDuffieuxMelvin {
     }
     
     static Stream<Arguments> add() throws Throwable{
-        return Stream.of(Arguments.of(0,0), Arguments.of(-1,-1), Arguments.of(1,1));
+        return Stream.of(Arguments.of(0, 0), Arguments.of(-1, -1), Arguments.of(1, 1));
     }
     
     @ParameterizedTest()
@@ -51,7 +51,7 @@ public class FIFOTestDuffieuxMelvin {
     }
     
     static Stream<Arguments> first() throws Throwable{
-        return Stream.of(Arguments.of(0,0), Arguments.of(-1,-1), Arguments.of(1,1));
+        return Stream.of(Arguments.of(0, 0), Arguments.of(-1, -1), Arguments.of(1, 1));
     }
     
     @ParameterizedTest()
@@ -102,8 +102,8 @@ public class FIFOTestDuffieuxMelvin {
     static Stream<Arguments> size() throws Throwable{
         int[] tableau0 = new int[] {};
         int[] tableau1 = new int[] {0};
-        int[] tableau2 = new int[] {1,5};
-        int[] tableau3 = new int[] {4,5,4};
+        int[] tableau2 = new int[] {1, 5};
+        int[] tableau3 = new int[] {4, 5, 4};
         
         return Stream.of(Arguments.of(tableau0, 0), Arguments.of(tableau1, 1), Arguments.of(tableau2, 2), Arguments.of(tableau3, 3));
     }
